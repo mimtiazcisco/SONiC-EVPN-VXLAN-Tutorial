@@ -1,75 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SONiC EVPN VXLAN Course</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SONiC EVPN VXLAN Course</title>
 
-  <style>
-    body {
-      font-family: Arial;
-      background: #f5f7fb;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f4f6fb;
+}
 
-    header {
-      background: #0b3d91;
-      color: white;
-      padding: 30px;
-      font-size: 28px;
-      font-weight: bold;
-    }
+header {
+  background: #0b3d91;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
 
-    .container {
-      margin-top: 60px;
-    }
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
 
-    .button {
-      background: #ff6a00;
-      color: white;
-      padding: 18px 30px;
-      font-size: 20px;
-      text-decoration: none;
-      border-radius: 8px;
-      display: inline-block;
-      margin-top: 30px;
-    }
+header p {
+  margin-top: 10px;
+  font-size: 18px;
+}
 
-    .button:hover {
-      background: #ff8c33;
-    }
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+}
 
-    footer {
-      margin-top: 100px;
-      padding: 20px;
-      background: #eee;
-    }
-  </style>
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.button {
+  background: #ff6a00;
+  color: white;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.button:hover {
+  background: #ff8c33;
+}
+
+ul {
+  line-height: 1.8;
+}
+
+iframe {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-SONiC EVPN VXLAN Training
+<h1>SONiC EVPN VXLAN Training</h1>
+<p>Hands-on Course for Data Center and Network Engineers</p>
 </header>
 
 <div class="container">
 
-<h2>Complete Hands-On Course</h2>
-
+<div class="card">
+<h2>About This Course</h2>
 <p>
-Learn how to deploy EVPN VXLAN on SONiC step-by-step with real lab topology.
+This course explains how to deploy EVPN VXLAN using SONiC with practical lab examples,
+topology explanations, and real configuration workflows used in production networks.
 </p>
 
-<a class="button" href="SONiC-EVPN-VXLAN-Tutorial.pdf" target="_blank">
-Open Course PDF
+<a class="button" href="SONiC-EVPN-VXLAN-Tutorial.pdf" download>
+Download Course PDF
 </a>
+</div>
+
+<div class="card">
+<h2>What You Will Learn</h2>
+
+<ul>
+<li>SONiC architecture overview</li>
+<li>Underlay network design</li>
+<li>BGP EVPN control plane</li>
+<li>VXLAN data plane</li>
+<li>Leaf-Spine topology</li>
+<li>EVPN route types</li>
+<li>End-to-end lab deployment</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Course Viewer</h2>
+
+<iframe
+src="SONiC-EVPN-VXLAN-Tutorial.pdf"
+width="100%"
+height="900px">
+</iframe>
+
+</div>
 
 </div>
 
 <footer>
-Created by Imtiaz | Networking Course
+Created by Imtiaz | Networking Training
 </footer>
 
 </body>
